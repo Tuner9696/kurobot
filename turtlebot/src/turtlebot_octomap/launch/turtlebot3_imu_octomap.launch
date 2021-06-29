@@ -3,7 +3,7 @@
 <launch>
 	<include file="$(find turtlebot3_gazebo)/launch/turtlebot3_world.launch" />
 	<include file="$(find turtlebot3_bringup)/launch/turtlebot3_remote.launch" />
-
+	<include file="$(find turtlebot3_navigation)/launch/move_base_octomap.launch" />
 	<include file="$(find turtlebot_octomap)/launch/turtlebot3_special_rtabmap.launch" />
 	
 	<node pkg="tf" type="static_transform_publisher" name="map_world_broadcaster" args="0 0 0 0 0 0 world /map 100" />

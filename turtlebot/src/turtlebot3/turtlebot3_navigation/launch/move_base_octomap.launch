@@ -14,7 +14,7 @@
    </node>
 
     <!--amcl -->
-   <include file="$(find turtlebot3_navigation)/launch/amcl.launch" />
+<!--   <include file="$(find turtlebot3_navigation)/launch/amcl.launch" />-->
 
     <!-- move_base -->
     <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
